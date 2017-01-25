@@ -1,0 +1,32 @@
+web:
+    image: nginx:latest
+    ports:
+     - "127.0.0.5:8080:80"
+    volumes:
+     - ./docker/site.conf:/etc/nginx/conf.d/default.conf
+    volumes_from:
+      - php
+    links:
+      - php
+
+php:
+    build: ./docker/buildphp/
+    volumes:
+     - ./builds/development:/code
+#    image: php:7-fpm
+    links:
+      - mysql
+
+mysql:
+    image: mysql:5.7
+    restart: always
+    environment:
+     - MYSQL_ROOT_PASSWORD=rootpassword
+     - MYSQL_PASSWORD=phppwd
+     - MYSQL_USER=phptest
+     - MYSQL_DATABASE=phptest
+    volumes:
+      - ./docker/db_data:/var/lib/mysql
+
+#https://www.chapterthree.com/blog/drupal-development-docker-compose
+#https://janezurevc.name/drupal-dev-environment-on-docker

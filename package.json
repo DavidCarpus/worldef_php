@@ -1,0 +1,17 @@
+{
+  "name": "worldefsite",
+  "version": "1.0.0",
+  "description": "World Education Foundation Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "docker-compose build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-util": "^3.0.8"
+  }
+}
