@@ -1,0 +1,29 @@
+@import "_buttons";
+
+#wecollaborators {
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  float: left;
+//  background-color: green;
+  position: relative;
+  text-align:center;
+}
+.collaborator {
+  display:inline-block;
+  float: left;
+//  background-color: red;
+  width: 130px;
+  height: 80px;
+  margin: 0px 30px 10px 0px;
+}
+.collaborator img{
+    display: block;
+    max-width: 100%;
+    max-height: 50px;
+    margin: auto;
+}
+@media (max-width: 600px) {
+  .collaborator {
+     width: 110px;
+  }
+}

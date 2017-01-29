@@ -19,14 +19,16 @@ php:
 
 mysql:
     image: mysql:5.7
-    restart: always
     environment:
      - MYSQL_ROOT_PASSWORD=rootpassword
-     - MYSQL_PASSWORD=phppwd
-     - MYSQL_USER=phptest
-     - MYSQL_DATABASE=phptest
+     - MYSQL_PASSWORD=wordpress
+     - MYSQL_USER=wordpressuser
+     - MYSQL_DATABASE=wordpress
     volumes:
-      - ./docker/db_data:/var/lib/mysql
+      - ./docker/data/db_data:/var/lib/mysql
+      - ./docker/data/initdb:/docker-entrypoint-initdb.d
+
+#    restart: always
 
 #https://www.chapterthree.com/blog/drupal-development-docker-compose
 #https://janezurevc.name/drupal-dev-environment-on-docker

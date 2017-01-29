@@ -4,7 +4,12 @@ var gulp = require('gulp'),
     browserify = require('gulp-browserify'),
     concat = require('gulp-concat'),
     sass = require('gulp-ruby-sass'),
+    watch = require('gulp-watch'),
     browserSync = require('browser-sync').create();
+
+var reload = browserSync.reload();
+
+var destination = './builds/development/public';
 
 var coffeeSources = ['components/coffee/tagline.coffee']
 var jsSources = [
@@ -26,7 +31,7 @@ gulp.task('js', function () {
   gulp.src(jsSources)
     .pipe(concat('script.js'))
     .pipe(browserify())
-    .pipe(gulp.dest('builds/development/js'))
+    .pipe(gulp.dest(destination + '/js'))
 });
 
 gulp.task('compass', function() {
@@ -34,21 +39,62 @@ gulp.task('compass', function() {
      compass: true,
      lineNumbers: true
    }).on('error', gutil.log)
-   .pipe(gulp.dest('builds/development/css'))
+   .pipe(gulp.dest(destination + '/css'))
    .pipe(browserSync.stream());
 });
 
-gulp.task('default', ['coffee', 'js', 'compass', 'browser-sync', 'watch']);
+
+gulp.task('default', ['coffee', 'js', 'compass', 'browser-sync', 'copyPHP', 'copyImages', 'watch']);
+
+gulp.task('copyPHP', () => gulp
+  .src('./components/php/**/*', {base: './components/php'})
+  .pipe(gulp.dest(destination)));
+
+  gulp.task('copyImages', () => gulp
+    .src('./components/images/**/*', {base: './components'})
+    .pipe(gulp.dest(destination)));
+
+
 
 gulp.task('watch', function () {
   gulp.watch(coffeeSources, ['coffee']);
   gulp.watch(jsSources, ['js']);
   gulp.watch('components/sass/*.scss', ['compass']);
-  gulp.watch(['builds/development/*.php', 'builds/development/*.html'])
-  .on('change', function(file) {
-      gutil.log(gutil.colors.yellow('PHP or HTML file changed' + ' (' + file.path + ')'));
-      browserSync.reload();
-  });
+
+  var source = './components/php',
+    dest = destination;
+  gulp.src(source + '/**/*', {base: source})
+    .pipe(watch(source, {base: source}))
+    .on('change', function(file) {
+        msg='PHP or HTML file changed' + ' (' + file + ')';
+        gutil.log(gutil.colors.yellow(msg));
+        browserSync.reload();
+    })
+    .pipe(gulp.dest(dest));
+
+    var source = './components/include',
+        dest = destination + '/../include';
+    gulp.src(source + '/**/*', {base: source})
+      .pipe(watch(source, {base: source}))
+      .on('change', function(file) {
+          msg='PHP or HTML file changed' + ' (' + file + ')';
+          gutil.log(gutil.colors.yellow(msg));
+          browserSync.reload();
+      })
+      .pipe(gulp.dest(dest));
+
+    var source = './components/images',
+        dest = destination + '/images';
+    gulp.src(source + '/**/*', {base: source})
+      .pipe(watch(source + '/*', {base: source}))
+      .on('change', function(file) {
+          msg='Image changed' + ' (' + file + ')';
+          gutil.log(gutil.colors.yellow(msg));
+          browserSync.reload();
+      })
+      .pipe(gulp.dest(dest));
+
+
 });
 
 gulp.task('browser-sync', function() {
