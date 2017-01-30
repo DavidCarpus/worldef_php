@@ -28,7 +28,7 @@ function find_all_collaborators(){
 
 <h3 style="text-align: center;">WE COLLABORATORS</h3>
 
-<div id='wecollaborators' style="margin-left:30px">
+<div id='wecollaborators'>
 <?php
 foreach (find_all_collaborators() as $collaborator) {
   echo "<div class='collaborator'>";
@@ -40,7 +40,6 @@ foreach (find_all_collaborators() as $collaborator) {
 }
 ?>
 </div>
-
 <div id='collabrateJoin' class="buttonBar">
   <a href="https://wefoundation.typeform.com/to/eDMXH0" class="buttonWithBorder">Collaborate</a>
   <a href="http://worldef.com/donate/" class="buttonWithBorder">Donate</a>
