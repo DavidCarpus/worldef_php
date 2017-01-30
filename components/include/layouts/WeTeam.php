@@ -77,9 +77,11 @@ function team_member_thumbnail($teamMemberID)
     $results .=   "onmouseout='style=\"opacity:0.5;\"'";
     $results .=  " />";
   }
+  $results .=  "<div class='labelblock'>\n";
   $results .= "<div class='name'>" . $teamMember['name'] . "</div>";
   $results .= "<div class='title'>" . $teamMember['title'] . "</div>";
-    $results .=  "</div>\n";
+  $results .=  "</div>";
+  $results .=  "</div>\n";
   return $results;
 }
 

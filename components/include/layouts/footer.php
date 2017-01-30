@@ -1,6 +1,7 @@
     <footer>© <?php echo date("Y"); ?>
       World Education Foundation | All Rights Reserved
       </footer>
+      <script src="js/script.js"></script>
 	</body>
 </html>
 <?php
