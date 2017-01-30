@@ -13,10 +13,10 @@ var destination = './builds/development/public';
 
 var coffeeSources = ['components/coffee/tagline.coffee']
 var jsSources = [
-  'components/scripts/tagline.js',
-  'components/scripts/rclick.js',
-  'components/scripts/pixgrid.js',
-  'components/scripts/template.js'
+  'components/scripts/styleChange.js',
+  // 'components/scripts/rclick.js',
+  // 'components/scripts/pixgrid.js',
+  // 'components/scripts/template.js'
 ];
 var sassSources = ['components/sass/style.scss']
 
