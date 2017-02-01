@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "export COMPOSE_PROJECT_NAME=worldefsite && docker-compose build",
-    "start": "export COMPOSE_PROJECT_NAME=worldefsite && docker-compose up"
+    "start": "export COMPOSE_PROJECT_NAME=worldefsite && docker-compose up",
+    "stop": "export COMPOSE_PROJECT_NAME=worldefsite && docker-compose stop"
   },
   "author": "",
   "license": "ISC",

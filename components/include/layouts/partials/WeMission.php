@@ -1,4 +1,5 @@
 <h3 style="text-align:center;">WE MISSION</h3>
+<p>
 The WE Foundation bridges the gap between academic and expert
 knowledge and their implementation in local communities around the
 world. WE are creating the classrooms, learners and livelihoods of
@@ -12,3 +13,4 @@ connections and more tailored programs for each new community we
 interact with. Essentially, WE help share the best proven practices
 across all kinds of borders and boundaries to promote and secure
 peace through education.
+</p>

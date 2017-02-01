@@ -1,12 +1,12 @@
 <h3 style="text-align:center;">WHAT WE OFFER</h3>
 
-<div style="display: inline-block;width: 30%; vertical-align: top; ">
+<div id='offer_students'>
   <?php include("../include/layouts/partials/OfferStudents.php"); ?>
 </div>
-<div style="display: inline-block;width: 30%;  vertical-align: top;">
+<div  id='offer_companies'>
   <?php include("../include/layouts/partials/OfferCompanies.php"); ?>
 </div>
-<div style="display: inline-block; width: 30%; vertical-align: top; ">
+<div  id='offer_university'>
   <?php include("../include/layouts/partials/OfferUniversities.php"); ?>
 </div>
 

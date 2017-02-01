@@ -3,28 +3,27 @@
   padding-left: 20px;
   background-color: $lightBlue;
 }
+.teammembers{
+  padding-left: 0px;
+}
 // -------- Phone
-@media only screen and (max-width: 600px) {
-    .teammembers{
-      padding-left: 0px;
-    }
-
+@media (max-device-width: 480px) {
     .teammember {
 //      background-color: red;
-      width: 100%;
-      height: 210px;
+      width: 45%;
+      height: 410px;
+      font-size: 150%;
+      img {
+        height: 400px;
+      }
     }
 }
 // -------- Computer/Tablet
-@media only screen and (min-width: 600px) {
-    .teammembers{
-      padding-left: 0px;
-    }
-
+@media (min-device-width: 480px) {
     .teammember {
 //      background-color: green;
       width: 200px;
-      height: 210px;
+      height: 160px;
     }
 }
 
@@ -37,11 +36,11 @@
     position: relative;
     margin: auto;
     color: black;
-    margin-top: -80px;
+    margin-top: -90px;
     width: 180px;
   }
   img {
-    height: 200px;
+//    height: 200px;
     opacity: 0.5;
   }
   img .hover{

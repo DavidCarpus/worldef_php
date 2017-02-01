@@ -1,12 +1,12 @@
 .parallax-container  {
     background-attachment: scroll;
-    background-position: center !important;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 }
 
@@ -14,44 +14,31 @@
   position: relative;
 //  opacity: 0.65;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   opacity: 1.0;
 }
+$ht          : 600px;
 
 .bgimg-1 {
   background-image: url('../images/WE-SHOWCASE-Gr--NN-Hj--rnet-1-7.jpg');
-  padding-top: 100px;
-  min-height: 100%;
-  height: 800px;
+//  padding-top: 100px;
+  min-height: $ht;
+  height: $ht;
 }
 .bgimg-2 {
   background-image: url('../images/100years-22.jpg');
+  background-position: 6px;
+  margin-top: 00px;
+  padding-top: 200px;
 //  min-height: 100%;
   min-height: 500px;
 }
 
 .bgimg-3 {
   background-image: url('../images/MG_4151.jpg');
-  background-position: 50% 76px;
+  background-position: 60%;
 //  min-height: 100%;
   min-height: 350px;
-}
-
-.caption span.border {
-//  background-color: $green;
-//  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-//  letter-spacing: 10px;
-}
-
-.caption {
-  position: absolute;
-//  color: white;
-  left: 0;
-//  top: 50%;
-  width: 100%;
-  text-align: center;
 }

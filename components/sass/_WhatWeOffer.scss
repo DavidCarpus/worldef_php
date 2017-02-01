@@ -1,0 +1,51 @@
+@media (max-device-width: 480px) {
+  #whatweoffer{
+    -webkit-text-size-adjust: 200%;
+  }
+  #offer_university #offer_companies #offer_students {
+    width: 100%;
+  }
+
+}
+
+@media (min-device-width: 480px) {
+  #whatweoffer{
+    color: #777;
+  //  text-align:center;
+    text-align: justify;
+    background-color: $lightBlue;
+
+    #offer_students {
+      width: 30%;
+      display: inline-block;
+      vertical-align: top;
+    }
+    #offer_companies {
+      width: 30%;
+      display: inline-block;
+      vertical-align: top;
+    }
+    #offer_university {
+      width: 30%;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}
+// #offer_university {
+//   display: inline-block;
+//   width: 30%;
+//   vertical-align: top;
+// }
+//
+// #offer_companies {
+//   display: inline-block;
+//   width: 30%;
+//   vertical-align: top;
+// }
+//
+// #offer_students {
+//   display: inline-block;
+//   width: 30%;
+//   vertical-align: top;
+// }

@@ -1,4 +1,3 @@
-<?php $layout_context = "public"; ?>
 <?php include("../include/layouts/header.php"); ?>
 
 <div id="main">
@@ -7,18 +6,6 @@
 			<p ><img src='images/newWElogo_transparent_white.png' />World Education Foundation</p>
 		</div>
 	</div>
-<!--
-	<div id="mainMenuHeader"  >
-		<div class="caption">
-			<p style="font-size: 170%;">
-				<img src='images/newWElogo_transparent_white.png'
-				style="width:100px; vertical-align: middle;"/>
-				World Education Foundation
-			</p>
-		</div>
-	</div>
--->
-	<?php //<div class="bgimg-1">	</div> ?>
 	<div class="bgimg-1">	</div>
 
 	<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">

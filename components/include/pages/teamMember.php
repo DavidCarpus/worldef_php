@@ -1,0 +1,35 @@
+<?php
+include("../include/teamFunctions.php");
+?>
+
+<?php
+$cssPathAdjustment='../';
+include("../include/layouts/header.php");
+?>
+
+<div id="main">
+  <div id="teamMemberHeader">
+		<div class="caption">
+			<p ><img src='../images/newWElogo_transparent_white.png' />World Education Foundation</p>
+		</div>
+	</div>
+
+	<div style="height:150px">
+		&nbsp;
+	</div>
+
+  <?php $teamMemberID=$_REQUEST[id]; ?>
+  <?php
+    echo team_member_detail($teamMemberID);
+  ?>
+</div>
+
+
+<?php include("../include/layouts/footer.php"); ?>
+
+<?php
+/*
+http://serverfault.com/questions/604181/nginx-rewrite-rule-for-file-within-folder-not-working
+*/
+
+?>
