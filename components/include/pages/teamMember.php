@@ -10,7 +10,7 @@ include("../include/layouts/header.php");
 <div id="main">
   <div id="teamMemberHeader">
 		<div class="caption">
-			<p ><img src='../images/newWElogo_transparent_white.png' />World Education Foundation</p>
+			<p ><a href="../"><img src='../images/newWElogo_transparent_white.png' /></a>World Education Foundation</p>
 		</div>
 	</div>
 

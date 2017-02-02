@@ -136,6 +136,9 @@ function team_member_detail($id)
 {
   $teamMember = find_team_member($id);
   $results = "\n<div class='teamdetail'>";
+  $results .= "<H1>" . $teamMember['name'] . "</H1>";
+  $results .= "<H2>" . $teamMember['title'] . "</H2>";
+
   if ($teamMember['img'] != null) {
     $results .=  "<img src='../images/team/" . $teamMember['img'] . ".jpg' />";
   }
