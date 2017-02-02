@@ -1,7 +1,14 @@
+<?php
+if (!isset($rootPathAdjustment)) {
+	$rootPathAdjustment = "";
+}
+$jsPath="$rootPathAdjustment/js/script.js";
+?>
+
     <footer>© <?php echo date("Y"); ?>
       World Education Foundation | All Rights Reserved
       </footer>
-      <script src="js/script.js"></script>
+      <script src="<?php echo $jsPath ?>"></script>
 	</body>
 </html>
 <?php

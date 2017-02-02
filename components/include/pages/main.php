@@ -26,15 +26,15 @@
 	</div>
 
 	<div class="bgimg-3">
-		<div class="caption">
-	    <span class="border" style="vertical-align: top; color: black;" id='kafkaQuote'>
-				<p id='kafkaQuote'>
-					"By believing passionately in something that still does not exist, <strong>WE create it"</strong>
-				</p>
-				<img
-				src="images/150px-Franz_Kafkas_signature.png"
-				alt="Franz_Kafka's signature" width="202" height="75">
-			</span>
+		<div id='kafkaQuote'>
+				<quote >"By believing passionately in something that still does not exist, <strong>WE create it"</strong>
+				</quote>
+				<br />
+				<div >
+					<img style="display:block;margin:0 auto;"
+					src="images/FranzKafkasSignature.png"
+					alt="Franz_Kafka's signature" width="202" height="75">
+			</div>
 		</div>
 	</div>
 

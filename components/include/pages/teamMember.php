@@ -3,7 +3,7 @@ include("../include/teamFunctions.php");
 ?>
 
 <?php
-$cssPathAdjustment='../';
+$rootPathAdjustment='../';
 include("../include/layouts/header.php");
 ?>
 
@@ -12,10 +12,6 @@ include("../include/layouts/header.php");
 		<div class="caption">
 			<p ><img src='../images/newWElogo_transparent_white.png' />World Education Foundation</p>
 		</div>
-	</div>
-
-	<div style="height:150px">
-		&nbsp;
 	</div>
 
   <?php $teamMemberID=$_REQUEST[id]; ?>

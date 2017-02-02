@@ -2,7 +2,7 @@ var $;
 
 $ = require('jquery');
 
-var $logo = $('#mainMenuHeader');
+var $logo = $('#mainMenuHeader').find('.caption');
 
 $(document).scroll(function() {
 //    $logo.css({display: $(this).scrollTop()>100 ? "none":"block"});

@@ -29,17 +29,27 @@ body {
     -webkit-text-size-adjust: 200%;
   }
 }
-
-p {
-  font-size:20px;
-}
 .img-circle {
    border-radius: 50%;
 }
 
 #kafkaQuote{
-  color: $kafkaQuote;
-  font-size: 150%;
+  width: 100%;
+  position: absolute;
+  vertical-align: top;
+  display: inline-block;
+  margin: auto;
+  quote {
+    -webkit-text-size-adjust: 200%;
+    font-size: 200%;
+    color: $kafkaQuote;
+    text-align: center;
+    font-style: italic;
+    background: rgba(65, 65, 65, .5);
+//    background-color: white;
+    margin: auto;
+//    opacity: 0.5;
+  }
 }
 
 #mainMenuHeader{
@@ -57,53 +67,15 @@ p {
     -webkit-text-size-adjust: 200%;
     font-size: 200%;
   }
-}
-#teamMemberHeader{
-  display: block;
-  width: 100%;
-  z-index: 100;
-  color: white;
-  p {
-    img{
-      width:100px;
-      z-index: 100;
-      vertical-align: middle;
-    }
-    -webkit-text-size-adjust: 200%;
-    font-size: 200%;
+  .caption span.border {
+    padding: 18px;
+    font-size: 25px;
   }
+
   .caption {
     position: absolute;
-  //  color: white;
     left: 0;
-    background-color: black;
-  //  top: 50%;
     width: 100%;
     text-align: center;
-    span.border {
-    //  background-color: $green;
-    //  color: #fff;
-      padding: 18px;
-      font-size: 25px;
-    //  letter-spacing: 10px;
-    }
   }
-}
-
-
-.caption span.border {
-//  background-color: $green;
-//  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-//  letter-spacing: 10px;
-}
-
-.caption {
-  position: absolute;
-//  color: white;
-  left: 0;
-//  top: 50%;
-  width: 100%;
-  text-align: center;
 }

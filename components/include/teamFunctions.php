@@ -56,6 +56,32 @@ function find_active_team()
   return array_map(function ($u) {  return $u['id']; }, $filtered);
 }
 
+function find_previous_team_member($id)
+{
+  $team = find_active_team();
+  $prevMemberID = $id;
+  foreach ($team as $memberId) {
+    if ($memberId == $id) {
+      break;
+    }
+    $prevMemberID = $memberId;
+  }
+  return find_team_member($prevMemberID);
+}
+
+function find_next_team_member($id)
+{
+  $team = find_active_team();
+  $member = $id;
+  foreach ($team as $memberId) {
+    if ( $memberId > $id) {
+        $member = $memberId;
+        break;
+    }
+  }
+  return find_team_member($member);
+}
+
 function find_team_member($id)
 {
   global $team;
@@ -65,6 +91,31 @@ function find_team_member($id)
     }
   }
   return null;
+}
+
+function team_maximum_active_id()
+{
+  global $team;
+  $id=0;
+  foreach ($team as $key => $val) {
+    if ($val['active'] && $val['id'] > $id) {
+        $id = $val['id'];
+    }
+  }
+  return $id;
+}
+
+
+function team_minimum_active_id()
+{
+  global $team;
+  $id=0;
+  foreach ($team as $key => $val) {
+    if ($val['active'] && $val['id'] < $id) {
+        $id = $val['id'];
+    }
+  }
+  return $id;
 }
 
 function team_member_text($id)
@@ -88,9 +139,22 @@ function team_member_detail($id)
   if ($teamMember['img'] != null) {
     $results .=  "<img src='../images/team/" . $teamMember['img'] . ".jpg' />";
   }
-  $results .= "<p>" . team_member_text($id) . "</p>";
-  $results .= "<div class='name'>" . $teamMember['name'] . "</div>\n";
-  $results .= "<div class='title'>" . $teamMember['title'] . "</div>\n";
+  $results .= "<p class='text'>" . team_member_text($id) . "</p>";
+
+  $prev = find_previous_team_member($id);
+  $next = find_next_team_member($id);
+  $results .= "<div class='prevLink'>";
+  if ($prev['id'] != $id) {
+    $results .= "<a href='" . $prev['id'] . "'>" . $prev['name'] . "</a>";
+  }
+  $results .=  "&nbsp;</div>\n";
+
+  $results .= "<div class='nextLink'>";
+  if ($next['id'] != $id) {
+    $results .= "<a href='" . $next['id'] . "'>" . $next['name'] . "</a>";
+  }
+  $results .=  "&nbsp;</div>\n";
+
   $results .=  "</div>\n";
   return $results;
 }

@@ -2,10 +2,10 @@
 if (!isset($layout_context)) {
 	$layout_context = "public";
 }
-if (!isset($cssPathAdjustment)) {
-	$cssPathAdjustment = "";
+if (!isset($rootPathAdjustment)) {
+	$rootPathAdjustment = "";
 }
-$cssPath="$cssPathAdjustmentcss?>/css/style.css";
+$cssPath="$rootPathAdjustment/css/style.css";
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
@@ -14,6 +14,6 @@ $cssPath="$cssPathAdjustmentcss?>/css/style.css";
 <html lang="en">
 	<head>
 		<title>World Education Foundation &#8211; Building Peace Through Education</title>
-		<link href="<?php echo $cssPathAdjustment ?>css/style.css" media="all" rel="stylesheet" type="text/css" />
+		<link href="<?php echo $cssPath ?>" media="all" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
