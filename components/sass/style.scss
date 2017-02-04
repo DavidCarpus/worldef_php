@@ -22,7 +22,10 @@
 @import "_projects";
 
 @import "_buttons";
+@import "_main";
 @import "_WhatWeOffer";
+@import "simple-slideshow-styles";
+
 
 @media (min-device-width: 480px) {
 body {
@@ -31,6 +34,10 @@ body {
 }
 .img-circle {
    border-radius: 50%;
+}
+.fullWidthContainer{
+  width: 100%;
+   margin: 0 auto;
 }
 
 #kafkaQuote{
@@ -52,11 +59,40 @@ body {
   }
 }
 
+
+#subDirHeader{
+  display: block;
+  width: 100%;
+//  z-index: 100;
+  color: white;
+  p {
+    img{
+      width:100px;
+      z-index: 100;
+      vertical-align: middle;
+    }
+    -webkit-text-size-adjust: 200%;
+    font-size: 200%;
+  }
+  .caption {
+//    position: absolute;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    span.border {
+      padding: 18px;
+      font-size: 25px;
+    }
+  }
+}
+
 #mainMenuHeader{
   position: fixed;
   display: block;
   width: 100%;
   opacity: 1.0;
+  height: 150px;
   z-index: 100;
   p {
     img{
@@ -77,5 +113,19 @@ body {
     left: 0;
     width: 100%;
     text-align: center;
+  }
+}
+
+#projectSlideshow{
+  width: 50%;
+  margin: auto;
+}
+
+.bss-slides figure{
+//  width: 50%;
+  margin: auto;
+  // max-height: 200px;
+  img{
+    max-height: 300px;
   }
 }

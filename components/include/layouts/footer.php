@@ -2,7 +2,7 @@
 if (!isset($rootPathAdjustment)) {
 	$rootPathAdjustment = "";
 }
-$jsPath="$rootPathAdjustment/js/script.js";
+$jsPath=$rootPathAdjustment."js/script.js";
 ?>
 
     <footer>© <?php echo date("Y"); ?>
@@ -12,6 +12,7 @@ $jsPath="$rootPathAdjustment/js/script.js";
 	</body>
 </html>
 <?php
+
   // 5. Close database connection
 	if (isset($connection)) {
 	  mysqli_close($connection);

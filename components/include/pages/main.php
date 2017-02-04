@@ -6,21 +6,29 @@
 			<p ><img src='images/newWElogo_transparent_white.png' />World Education Foundation</p>
 		</div>
 	</div>
-	<div class="bgimg-1">	</div>
 
-	<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+	<div class="fullWidthContainer">
+		<div class="bgimg-1">	</div>
+	</div>
+
+<h2>BUILDING PEACE THROUGH EDUCATION AND TECHNOLOGY</h2>
+<div style="display:inline-block;position:relative;">
+	<section class="wemission">
 		<?php include("../include/layouts/partials/WeMission.php"); ?>
-	</div>
+	</section>
 
-	<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+	<section class="wevision">
 		<?php include("../include/layouts/partials/WeVision.php"); ?>
-	</div>
+	</section>
+</div>
 
+<div class="fullWidthContainer">
 	<div class="bgimg-2">
 	</div>
+</div>
 
 	<div style="position:relative;">
-	  <div style="text-align:center;padding:50px 80px;text-align: justify;">
+	  <div id="weprojects">
 			<?php include("../include/layouts/WeProjects.php"); ?>
 	  </div>
 	</div>
@@ -46,7 +54,7 @@
 			<?php include("../include/layouts/WeCollaborators.php"); ?>
 		</div>
 
-		<div style="color: #777; text-align:center;text-align: justify;">
+		<div id="weteam">
 			<?php include("../include/layouts/WeTeam.php"); ?>
 		</div>
 

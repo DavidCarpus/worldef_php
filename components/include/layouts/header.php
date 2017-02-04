@@ -5,7 +5,7 @@ if (!isset($layout_context)) {
 if (!isset($rootPathAdjustment)) {
 	$rootPathAdjustment = "";
 }
-$cssPath="$rootPathAdjustment/css/style.css";
+$cssPath="$rootPathAdjustment"."css/style.css";
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"

@@ -1,0 +1,53 @@
+[
+  {"id":1, "active":1, "name":"wesolve",
+  "images":[
+      {"order":1 , "img":"projects/WE-SOLVE-Iraq-21.jpg"},
+      {"order":2 , "img":"projects/WE-SOLVE-Iraq-14.jpg"},
+      {"order":3 , "img":"projects/WE-SOLVE-CONCEPT-PHOTOS-IRAQ-1.jpg"},
+      {"order":4 , "img":"projects/WE-SOLVE-Iraq-4.jpg"},
+      {"order":5 , "img":"projects/WE-SOLVE-Iraq-11.jpg"},
+      {"order":6 , "img":"projects/WE-SOLVE-Iraq-12.jpg"},
+      {"order":7 , "img":"projects/WE-SOLVE-Iraq-17.jpg"},
+      {"order":8 , "img":"projects/WE-SOLVE-Iraq-6.jpg"},
+      {"order":9 , "img":"projects/WE-SOLVE-Iraq-13.jpg"},
+      {"order":10 , "img":"projects/WE-SOLVE-Iraq-16.jpg"},
+      {"order":11 , "img":"projects/WE-SOLVE-CONCEPT-PHOTOS-IRAQ-4.jpg"},
+      {"order":12 , "img":"projects/WE-SOLVE-Iraq-5.jpg"},
+      {"order":13 , "img":"projects/WE-SOLVE-Iraq-20.jpg"},
+      {"order":14 , "img":"projects/WE-SOLVE-Iraq-10.jpg"},
+      {"order":15 , "img":"projects/WE-SOLVE-Iraq-7.jpg"},
+      {"order":16 , "img":"projects/WE-SOLVE-Iraq-15.jpg"},
+      {"order":17 , "img":"projects/WE-SOLVE-Iraq-1.jpg"},
+      {"order":18 , "img":"projects/WE-SOLVE-Iraq-3.jpg"},
+      {"order":19 , "img":"projects/WE-SOLVE-CONCEPT-PHOTOS-IRAQ-3.jpg"},
+      {"order":20 , "img":"projects/WE-SOLVE-CONCEPT-PHOTOS-IRAQ-6.jpg"},
+      {"order":21 , "img":"projects/WE-SOLVE-Iraq-22.jpg"},
+      {"order":22 , "img":"projects/WE-SOLVE-Iraq-23.jpg"},
+      {"order":23 , "img":"projects/WE-SOLVE-Iraq-2.jpg"},
+      {"order":24 , "img":"projects/WE-SOLVE-CONCEPT-PHOTOS-IRAQ-2.jpg"},
+      {"order":25 , "img":"projects/WE-SOLVE-CONCEPT-PHOTOS-IRAQ-5.jpg"},
+      {"order":26 , "img":"projects/WE-SOLVE-CONCEPT-PHOTOS-IRAQ-7.jpg"}
+    ]
+  },
+
+  {"id":2, "active":1, "name":"wekolwezi",
+    "images":[
+      {"order":1,
+       "img":"projects/WE-SOLVE-Mining-in-Kapata-DR-Congo-Supply-Chain-1.jpg"},
+      {"order":2,
+        "img":"projects/WE-SOLVE-Mining-in-Kapata-DR-Congo-Supply-Chain-2.jpg"},
+      {"order":3,
+      "img":"projects/WE-SOLVE-Mining-in-Kapata-DR-Congo-Supply-Chain-3.jpg"},
+      {"order":4,
+      "img":"projects/WE-SOLVE-Mining-in-Kapata-DR-Congo-Supply-Chain-4.jpg"},
+      {"order":5,
+      "img":"projects/WE-SOLVE-Mining-in-Kapata-DR-Congo-Supply-Chain-5.jpg"},
+      {"order":7,
+      "img":"projects/WE-SOLVE-Mining-in-Kapata-DR-Congo-Supply-Chain-7.jpg"},
+      {"order":8,
+      "img":"projects/WE-SOLVE-Mining-in-Kapata-DR-Congo-Supply-Chain-8.jpg"},
+      {"order":9,
+      "img":"projects/WE-SOLVE-Mining-in-Kapata-DR-Congo-Supply-Chain-9.jpg"}
+      ]
+  }
+]

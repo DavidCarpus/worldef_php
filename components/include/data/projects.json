@@ -1,0 +1,10 @@
+[
+  {"id": 1, "active": true, "shortDesc":"We Solve Solution Vortex Environment", "img":"IRAQ32", "slideshow":"wesolve"},
+  {"id": 2, "active": true, "shortDesc":"We Kolwezi", "img":"KOVELZI2",
+    "slideshow":"wekolwezi"},
+  {"id": 3, "active": true, "shortDesc":"We Bio-Diesel", "img":"TANZANIA22"},
+  {"id": 4, "active": true, "shortDesc":"We Malaria", "img":"WEMALARIA2"},
+  {"id": 5, "active": true, "shortDesc":"We Haiti", "img":"haITI22"},
+  {"id": 6, "active": true, "shortDesc":"We American Football", "img":"cONGOaMERICA32"},
+  {"id": 7, "active": true, "shortDesc":"We Sahel Youth Development", "img":"SAHARA23"}
+]

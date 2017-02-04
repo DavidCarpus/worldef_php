@@ -1,0 +1,71 @@
+/* @media only screen and (min-device-width: 1024px) {} */
+#main{
+  h2{
+    text-align: center;
+  }
+  .wemission{
+    // background-color:red;
+//    font-size: 3vmin;
+    font-family: 'Open Sans';
+    text-align:center;
+    padding:20px 15px;
+    text-align: justify;
+    display:inline-block;
+    float: left;
+  }
+  .wevision{
+    font-family: 'Open Sans';
+    // background-color:green;
+    text-align:center;
+    padding:20px 15px;
+    text-align: justify;
+    display:inline-block;
+//    position: absolute;
+    float: left;
+  }
+}
+#weprojects{
+  text-align:  center;
+  padding:50px 50px;
+  text-align: justify;
+}
+#weteam{
+  color: #777;
+  text-align:center;
+  text-align: justify;
+}
+// -------- Phone
+@media (max-device-width: 480px) {
+    .wemission{
+      width: 100%;
+    }
+    .wevision{
+      width: 100%;
+    }
+  }
+  // -------- Computer/Tablet
+  @media (min-device-width: 480px) {
+    .wemission{
+        width: 46%;
+      }
+      .wevision{
+        width: 46%;
+      }
+    }
+
+    @media only screen and (max-device-width: 1024px) {
+      #main{
+        p{
+          font-size: 4vmin;
+        }
+        li{
+          font-size: 3vmin;
+        }
+        h2{
+          font-size: 5vmin;
+        }
+        h3{
+          font-size: 3vmin;
+        }
+      }
+    }

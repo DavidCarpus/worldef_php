@@ -1,44 +1,53 @@
-.parallax-container  {
+/*.parallax-container  {
     background-attachment: scroll;
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
+*/
 @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+@media only screen and (min-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: fixed;
     }
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-//  opacity: 0.65;
-  background-attachment: fixed;
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   opacity: 1.0;
 }
-$ht          : 600px;
 
+$ht          : 600px;
 .bgimg-1 {
   background-image: url('../images/WE-SHOWCASE-Gr--NN-Hj--rnet-1-7.jpg');
+  background-size: 50% 50%;
+  background-size: 100% 100%;
 //  padding-top: 100px;
   min-height: $ht;
   height: $ht;
 }
+$ht          : 600px;
 .bgimg-2 {
   background-image: url('../images/100years-22.jpg');
-  background-position: 6px;
-  margin-top: 00px;
-  padding-top: 200px;
-//  min-height: 100%;
-  min-height: 500px;
+//  background-position: 6px 150px;
+background-position: 50% 50%;
+background-position: 100% 100%;
+  background-size: 100% 100%;
+  margin-top: 0px;
+  min-height: $ht;
+//  height: $ht;
+//  min-height: 500px;
+//  height: 500px;
 }
-
 .bgimg-3 {
   background-image: url('../images/MG_4151.jpg');
-  background-position: 60%;
+//  background-position: 10%;
 //  min-height: 100%;
   min-height: 350px;
 }

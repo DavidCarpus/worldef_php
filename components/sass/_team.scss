@@ -48,32 +48,7 @@
   }
 }
 
-#teamMemberHeader{
-  display: block;
-  width: 100%;
-//  z-index: 100;
-  color: white;
-  p {
-    img{
-      width:100px;
-      z-index: 100;
-      vertical-align: middle;
-    }
-    -webkit-text-size-adjust: 200%;
-    font-size: 200%;
-  }
-  .caption {
-//    position: absolute;
-    left: 0;
-    background-color: black;
-    width: 100%;
-    text-align: center;
-    span.border {
-      padding: 18px;
-      font-size: 25px;
-    }
-  }
-}
+
 .teamdetail{
   width: 80%;
 //  display: block;

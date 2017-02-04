@@ -8,9 +8,9 @@ include("../include/layouts/header.php");
 ?>
 
 <div id="main">
-  <div id="teamMemberHeader">
+  <div id="subDirHeader">
 		<div class="caption">
-			<p ><a href="../"><img src='../images/newWElogo_transparent_white.png' /></a>World Education Foundation</p>
+			<p ><a href="../#weteam"><img src='../images/newWElogo_transparent_white.png' /></a>World Education Foundation</p>
 		</div>
 	</div>
 
