@@ -1,29 +1,59 @@
 @import "_buttons";
 
 #wecollaborators {
-  width: 100%;
-  margin: 0px 0px 0px 0px;
   float: left;
-//  background-color: green;
   position: relative;
   text-align:center;
+//  display: flex;
+  justify-content:center;
 }
 .collaborator {
   display:inline-block;
   float: left;
 //  background-color: red;
-  width: 130px;
-  height: 80px;
-  margin: 0px 30px 10px 0px;
 }
 .collaborator img{
     display: block;
-    max-width: 100%;
-    max-height: 50px;
     margin: auto;
 }
-@media (max-width: 600px) {
+
+@media (max-width: $maxPhoneWidth) {
   .collaborator {
      width: 110px;
+  }
+}
+
+// -------- Phone
+@media (max-device-width: $maxPhoneWidth) {
+  .collaborator {
+    height: 150px;
+     width: 50%;
+     padding-bottom: 40px;
+//     background-color: red;
+     img{
+//       background-color: green;
+       margin: 0px 30px 10px 0px;
+       margin: auto;
+       width: 100%;
+       max-width: 100%;
+       max-height: 100%;
+     }
+  }
+}
+// -------- Computer/Tablet
+@media (min-device-width: $maxPhoneWidth) {
+  .collaborator {
+    height: 80px;
+    min-height: 100%;
+    min-width: 20%;
+    width: 60px;
+    padding-right: 10px;
+    img{
+      flex-shrink:0;
+      margin: auto;
+      vertical-align: middle;
+      max-width: 100%;
+      max-height: 100%;
+    }
   }
 }

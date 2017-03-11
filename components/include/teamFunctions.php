@@ -95,12 +95,18 @@ function team_member_detail($id)
 {
   $teamMember = find_team_member($id);
   $results = "\n<div class='teamdetail'>";
-  $results .= "<H1>" . $teamMember['name'] . "</H1>";
-  $results .= "<H2>" . $teamMember['title'] . "</H2>";
+  $results .= "<div style='width:100%;margin: 0px auto; display:block;'>";
+  $results .= "<H1 style='width:100%;text-align:center;'>" . $teamMember['name'];
+  if ($teamMember['title'] != null) {
+    $results .= " - " . $teamMember['title'];
+  }
+  $results .= "</H1>";
 
   if ($teamMember['img'] != null) {
-    $results .=  "<img src='../images/team/" . $teamMember['img'] . ".jpg' />";
+    $results .=  "<img  style='margin: 0px auto; display:block;' src='../images/team/" . $teamMember['img'] . ".jpg' />";
   }
+  $results .= "</div>";
+
   $results .= "<p class='text'>" . team_member_text($id) . "</p>";
 
   $prev = find_previous_team_member($id);
@@ -134,11 +140,18 @@ function team_member_thumbnail($teamMemberID)
   $results .= "<a href='teamMember/" . $teamMemberID . "'>";
   if ($teamMember['img'] != null) {
     $results .=  "<img class='img-circle' src='images/team/" . $teamMember['img'] . "_tn.jpg' ";
-    $results .=   "onmouseover='style=\"opacity:1;\"' ";
-    $results .=   "onmouseout='style=\"opacity:0.5;\"'";
+    $results .=   "onmouseover='toggleTeamThumbnailCaption(this, 1);' ";
+    $results .=   "onmouseout='toggleTeamThumbnailCaption(this, 0);'";
+  // $results .=   "onmouseover='style=\"opacity:1\";toggleTeamThumbnailCaption(this, 1)' ";
+  // $results .=   "onmouseout='style=\"opacity:0.5\";toggleTeamThumbnailCaption(this, 0)'";
+    // toggleTeamThumbnailCaption
     $results .=  " />";
   }
-  $results .=  "<div class='labelblock'>\n";
+  $results .=  "<div class='labelblock' ";
+  $results .=   "onmouseover='toggleCaption(this, 1);' ";
+  $results .=   "onmouseout='toggleCaption(this, 0);'";
+  $results .=  " >\n";
+
   $results .= "<div class='name'>" . $teamMember['name'] . "</div>";
   $results .= "<div class='title'>" . $teamMember['title'] . "</div>";
   $results .=  "</div>";

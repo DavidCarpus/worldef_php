@@ -1,27 +1,37 @@
-The Sahel Youth Development project utilizes a human-centered design approach and participatory methods toensure that the participants become engaged and effective civic actors, along with building their capacity and understanding of the 7 pillars surrounding social responsibility and inclusion. The design approaches innovation, creativity, empowerment and youth-focused development strategies to solve personal and community problems.
-
+<p>The Sahel Youth Development project utilizes a human-centered design approach and participatory methods toensure that the participants become engaged and effective civic actors, along with building their capacity and understanding of the 7 pillars surrounding social responsibility and inclusion. The design approaches innovation, creativity, empowerment and youth-focused development strategies to solve personal and community problems.
+  </p>
 <h2>FOCUS</h2>
 
-The WE Foundation is working to coordinate youth leadership and empowerment programs throughout the Southern Sahara region, building a dedicated institution to approach civic engagement, conflict resolution, democracy, human rights, cultural sensitivity, capacity building and income generation. The programs initiated will serve as a catalyst for peacebuilding and conflict resolution, while providing the opportunity for educational development concentrated on the youth from both sides of the disputed territories.
+<p>The WE Foundation is working to coordinate youth leadership and empowerment programs throughout the Southern Sahara region, building a dedicated institution to approach civic engagement, conflict resolution, democracy, human rights, cultural sensitivity, capacity building and income generation. The programs initiated will serve as a catalyst for peacebuilding and conflict resolution, while providing the opportunity for educational development concentrated on the youth from both sides of the disputed territories.
+  </p>
+<ul>
+  <li>Iterative and Flexible
+    </li>
+    <li>Scalable</li>
+  <li>Open-source</li>
+  <li>Context appropriate and user focused</li>
+  </ul>
 
-Iterative and Flexible
-Scalable
-Open-source
-Context appropriate and user focused
-% Sahrawi youth refugees
-50
-% Moroccan youth
-50
-% Gender Balance
-50
-Youth from Dahkla and Layounne in Morocco
-20
-Youth from selected refugee camps in Western Algeria
-20
+  <table class='stats'>
+    <tr class='heading'>
+      <td>% Sahrawi youth refugees</td>
+      <td>% Moroccan youth</td>
+      <td>% Gender Balance</td>
+      <td>Youth from Dahkla and Layounne in Morocco</td>
+      <td>Youth from selected refugee camps in Western Algeria</td>
+    </tr>
+    <tr class='data'>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+  </table>
 
 <h2>INITIATED</h2>
-
-Initiated in January 2013, the World Education Foundation has been developing a framework concentrating on capacity building of the youth in the conflict Sahrawi region. Creating partnerships with locals, administrators, ministries, organizations and head of schools in Laayoune, Dakhla, Casablanca and the Tindouf-refugee camps, the WE Foundation has developed a Youth Program, which will recruit students (16-35) from each region to develop their understanding and knowledge in the areas of:
+<p>Initiated in January 2013, the World Education Foundation has been developing a framework concentrating on capacity building of the youth in the conflict Sahrawi region. Creating partnerships with locals, administrators, ministries, organizations and head of schools in Laayoune, Dakhla, Casablanca and the Tindouf-refugee camps, the WE Foundation has developed a Youth Program, which will recruit students (16-35) from each region to develop their understanding and knowledge in the areas of:
+  </p>
 
 <ul>
   <li>Human Rights</li>

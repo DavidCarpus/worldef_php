@@ -3,7 +3,7 @@ function find_all_collaborators(){
   return [
     ['url' => 'http://www.ntnu.no/',        'img' => 'images/collaborator/ntnu.png',              'imgC' => 'images/collaborator/ntnu_c.png'],
     ['url' => 'http://www.harvard.edu',     'img' => 'images/collaborator/harvard.png',           'imgC' => 'images/collaborator/harvard_c.png'],
-    ['url' => 'http://www.ucla.edu',        'img' => 'images/collaborator/UC_Riverside_seal.png', 'imgC' => 'images/collaborator/UC_Riverside_seal_c.png'],
+    ['url' => 'http://www.ucla.edu',        'img' => 'images/collaborator/UC_Riverside_seal.svg', 'imgC' => 'images/collaborator/UC_Riverside_seal_c.svg'],
     ['url' => 'https://www.stanford.edu/',  'img' => 'images/collaborator/stanford.png',          'imgC' => 'images/collaborator/stanford_c.png'],
     ['url' => 'https://www.nyu.edu/',       'img' => 'images/collaborator/nyuLogo.png',           'imgC' => 'images/collaborator/nyuLogo_c.png'],
     ['url' => 'https://www.mit.edu/',       'img' => 'images/collaborator/mitLogo.png',           'imgC' => 'images/collaborator/mitLogo_c.png'],

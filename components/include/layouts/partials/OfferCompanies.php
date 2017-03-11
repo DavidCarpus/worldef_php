@@ -1,3 +1,4 @@
+<i class="fa fa-gears" style="font-size:44px;margin:0 50%;"></i>
 <h3 style="text-align:center;">Companies</h3>
 <ul>
   <li>Can learn about communities across borders</li>

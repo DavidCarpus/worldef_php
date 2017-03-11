@@ -24,14 +24,21 @@
 @import "_buttons";
 @import "_main";
 @import "_WhatWeOffer";
-@import "simple-slideshow-styles";
 
+@import "simple-slideshow-styles";
+@import "../../lib/font-awesome-4.7.0/scss/font-awesome";
 
 @media (min-device-width: 480px) {
 body {
     -webkit-text-size-adjust: 200%;
+    font-family: 'Open Sans';
+    font-weight: 300;
   }
 }
+footer{
+  text-align: center;
+}
+
 .img-circle {
    border-radius: 50%;
 }
@@ -42,9 +49,10 @@ body {
 
 #kafkaQuote{
   width: 100%;
-  position: absolute;
+  // position: absolute;
+   text-align: center;
   vertical-align: top;
-  display: inline-block;
+  display: block;
   margin: auto;
   quote {
     -webkit-text-size-adjust: 200%;
@@ -54,7 +62,7 @@ body {
     font-style: italic;
     background: rgba(65, 65, 65, .5);
 //    background-color: white;
-    margin: auto;
+    // margin: auto;
 //    opacity: 0.5;
   }
 }
@@ -92,7 +100,7 @@ body {
   display: block;
   width: 100%;
   opacity: 1.0;
-  height: 150px;
+  height: 50px;
   z-index: 100;
   p {
     img{
@@ -112,20 +120,14 @@ body {
     position: absolute;
     left: 0;
     width: 100%;
-    text-align: center;
-  }
-}
-
-#projectSlideshow{
-  width: 50%;
-  margin: auto;
-}
-
-.bss-slides figure{
-//  width: 50%;
-  margin: auto;
-  // max-height: 200px;
-  img{
-    max-height: 300px;
+    height: 120px;
+    text-align:center;
+    h1{
+      img{
+        vertical-align: middle;
+        height: 80px;
+        opacity: 1;
+      }
+    }
   }
 }

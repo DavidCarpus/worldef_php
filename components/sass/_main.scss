@@ -1,5 +1,9 @@
 /* @media only screen and (min-device-width: 1024px) {} */
 #main{
+  h1{
+    margin-bottom: 0px;
+    display: inline-block;
+  }
   h2{
     text-align: center;
   }
@@ -23,7 +27,23 @@
 //    position: absolute;
     float: left;
   }
+  #offer_students{
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  #offer_companies{
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  #offer_university{
+    li {
+      margin-bottom: 10px;
+    }
+  }
 }
+
 #weprojects{
   text-align:  center;
   padding:50px 50px;
@@ -33,6 +53,43 @@
   color: #777;
   text-align:center;
   text-align: justify;
+}
+#contact{
+  display:inline-block;
+  text-align:center;
+  width: 100%;
+  background-color: $lightBlue;
+}
+
+#socialmedia{
+  text-align:center;
+  .smlink{
+    padding-right: 40px;
+  }
+  a{
+    font-size:16px;
+    color:#333333;
+    margin:0;
+    i{
+      font-size:44px;
+      line-height:44px;
+      background:f6f6f6;
+      color:ffffff;
+      -webkit-border-radius:0px;
+      -moz-border-radius:0px;
+      border-radius:0px;
+      padding:4px;
+    }
+    .fa-tumblr:hover {
+      color: red;
+    }
+    .fa-twitter:hover {
+      color: blue;
+    }
+    .fa-facebook:hover {
+      color: darkblue;
+    }
+  }
 }
 // -------- Phone
 @media (max-device-width: 480px) {
@@ -44,28 +101,28 @@
     }
   }
   // -------- Computer/Tablet
-  @media (min-device-width: 480px) {
-    .wemission{
-        width: 46%;
-      }
-      .wevision{
-        width: 46%;
-      }
+@media (min-device-width: 480px) {
+  .wemission{
+      width: 46%;
     }
+    .wevision{
+      width: 46%;
+    }
+  }
 
-    @media only screen and (max-device-width: 1024px) {
-      #main{
-        p{
-          font-size: 4vmin;
-        }
-        li{
-          font-size: 3vmin;
-        }
-        h2{
-          font-size: 5vmin;
-        }
-        h3{
-          font-size: 3vmin;
-        }
-      }
+@media only screen and (max-device-width: 480px) {
+  #main{
+    p{
+      font-size: 4vmin;
     }
+    li{
+      font-size: 3vmin;
+    }
+    h2{
+      font-size: 5vmin;
+    }
+    h3{
+      font-size: 4vmin;
+    }
+  }
+}

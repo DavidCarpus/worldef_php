@@ -32,7 +32,7 @@ function find_projects_member($id)
 function project_thumbnail($projectID)
 {
   $project = find_projects_member($projectID);
-  $results = "<div class='project'>";
+  $results = "<div class='projectThumbnail tooltip'>";
   $results .= "<a href='weProjects/" . $projectID . "'>";
   if ($project['img'] != null) {
     $results .=  "<img src='images/projects/" . $project['img'] . ".png'";
@@ -42,6 +42,13 @@ function project_thumbnail($projectID)
   }
 //  $results .= "<div class='shortDesc'>" . $project['shortDesc'] . "</div>";
   $results .=  "</a>";
+  $results .=  "<span class='tooltiptext'>";
+  if ($project['tooltip'] != null) {
+    $results .= $project['tooltip'];
+  } else {
+    $results .=  $project['shortDesc'];
+  }
+  $results .=  "</span>";
   $results .=  "</div>\n";
   return $results;
 }
@@ -76,6 +83,21 @@ function projectSlideshowBlock($name='')
   $results .= "</div>";
   return "$results";
 }
+
+//-----------------------------------------------
+function project_timeline($project)
+{
+  $results .= "<H1>Timeline</H1>";
+  $results .=  "<dl class='timeline'>\n";
+  foreach ($project['timeline'] as $val) {
+    $results .=  "<dt>" . $val['desc'] . "</dt>\n";
+    $results .=  "<dd>From:" . $val['start'] . " to " . $val['end'] . "</dd>\n";
+  }
+ $results .=  "</div>\n";
+ $results .=  "</dl>\n";
+  return $results;
+}
+
 //-----------------------------------------------
 function project_detail($projectID)
 {
@@ -101,6 +123,10 @@ function project_detail($projectID)
     $results .= "<div >";
     $results .= $text;
     $results .=  "</div>\n";
+  }
+
+  if ($project['timeline'] != null) {
+    $results .= project_timeline($project);
   }
 
   return $results;

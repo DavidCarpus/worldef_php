@@ -1,3 +1,4 @@
+<i class="fa fa-institution" style="font-size:44px;margin:0 50%;"></i>
 <h3 style="text-align:center;">Universities</h3>
 <ul>
   <li>Student and faculty programs which foster academic enlightenment</li>

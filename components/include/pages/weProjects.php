@@ -15,9 +15,11 @@ include("../include/layouts/header.php");
 	</div>
 
 	<?php $projectID=$_REQUEST[id]; ?>
+  <div class="projectDetail">
   <?php
     echo project_detail($projectID);
   ?>
+</div>
 
 </div>
 

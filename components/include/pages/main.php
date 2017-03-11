@@ -3,7 +3,7 @@
 <div id="main">
 	<div id="mainMenuHeader"  >
 		<div class="caption">
-			<p ><img src='images/newWElogo_transparent_white.png' />World Education Foundation</p>
+			<H1 class="logo"><img src='images/newWElogo_transparent_white.png' />World Education Foundation</H1>
 		</div>
 	</div>
 
@@ -23,8 +23,7 @@
 </div>
 
 <div class="fullWidthContainer">
-	<div class="bgimg-2">
-	</div>
+	<div class="bgimg-2">	</div>
 </div>
 
 	<div style="position:relative;">
@@ -37,7 +36,6 @@
 		<div id='kafkaQuote'>
 				<quote >"By believing passionately in something that still does not exist, <strong>WE create it"</strong>
 				</quote>
-				<br />
 				<div >
 					<img style="display:block;margin:0 auto;"
 					src="images/FranzKafkasSignature.png"
@@ -56,6 +54,14 @@
 
 		<div id="weteam">
 			<?php include("../include/layouts/WeTeam.php"); ?>
+		</div>
+
+		<div id="socialMedia">
+			<?php include("../include/layouts/partials/socialMedia.php"); ?>
+		</div>
+
+		<div id="contact">
+			<?php include("../include/layouts/partials/contact.php"); ?>
 		</div>
 
 </div>
